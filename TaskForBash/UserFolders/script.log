@@ -1,0 +1,6 @@
+chown: invalid group: ‘Administrator:Administrator’
+Created folder for user: Administrator
+chown: invalid group: ‘Ra:Ra’
+Created folder for user: Ra
+User The does not exist. Skipping folder creation.
+Script execution completed. Please check the log file: /d/devOps/TaskForBash/UserFolders/script.log
