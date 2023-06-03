@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Welcome to My Web Page</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<section>
+    <h2>About</h2>
+    <p>This is a sample web page for task :</p>
+    <p>Write a docker compose configuration, to deploy two containers on the same network (10.10.10.0/28) of the bridge type:
+        1 - Nginx or Apache, configuration files should be transferred to it via volume, port 80 from the container
+        should be available on the host machine on port 80802 - mysql or postgres, the data storage directory should
+        be mounted as docker volume, docker volume should be described in the same docker compose configuration file.
+        The service with the database must be accessible from the container with the web server by the names new_db, dev_db.</p>
+</section>
+<footer>
+    <p>&copy; 2023 My Web Page. All rights reserved.</p>
+</footer>
+</body>
+</html>
