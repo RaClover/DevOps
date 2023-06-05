@@ -20,13 +20,11 @@ Write a docker compose config, to deploy two containers on the same network (10.
   
   ## Usage
  
-  1. Created Dockerfile wiht the above content.
+  1. Created docker-compose.yml wiht the above content.
   
-  2. Created config.php file for database (mysql) configration.
-  3. Created index.html
-  4. run docker build -t raheeb_image_$(date)  in the terminal to  build the Docker image using the Dockerfile in the current directory (.) and tag it with the name raheeb_image_<current date>. The $(date +%Y-%m-%d) part dynamically adds the current date to the image name.
-  
-  5. run docker images in the terminal to see the newly created image, raheeb_image_<current date>, listed in the output.
+  2. Created html derectory inside it created an index.html and style.css.
+ 3. Started the containers using Docker Compose: docker-compose up
+4. open http://localhost:8080 we will see the the content that is inside the html
 
 
 
