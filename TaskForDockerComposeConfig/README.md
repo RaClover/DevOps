@@ -15,6 +15,14 @@ Write a docker compose config, to deploy two containers on the same network (10.
 2 - mysql or postgres, the data storage directory should be mounted as docker volume, docker volume should be described in the same docker compose configuration file. The service with the database must be accessible from the container with the web server by the names new_db, dev_db.<br><br><br>
   
   
+  ## Использование
+ 
+  1. Создал docker-compose.yml с вышеуказанным содержимым.
+  
+  2. Создал html-каталог, внутри которого создал index.html и style.css.
+ 3. Запустил контейнеры с помощью Docker Compose: docker-compose up
+4. откройте http://localhost:8080 мы увидим, что содержимое, которое находится внутри html
+  
   
   
   
