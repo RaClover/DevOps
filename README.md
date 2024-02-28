@@ -1,13 +1,13 @@
-1. Напишите bash скрипт, который создаст для всех пользователей
-системы отдельную папку в корневой директории с именем пользователя и
-установит для нее права 755. При этом владельцем папки должен быть соответствующий пользователь.
-Путь до корневого каталога создания директорий, должен определяться при запуске скрипта пользователем.
-Лог должен писаться и в stdout и в файл.<br><br><br>
+1. a bash script that will create
+a separate folder in the root directory with the user name for all users of the system and
+set the rights 755 for it. In this case, the owner of the folder must be the corresponding user.
+The path to the root directory of the directory creation must be determined when the script is run by the user.
+The log should be written both to stdout and to a file.<br><br><br>
 
 
 
-2. Напишите Dockerfile для создания образа, который будет содержать веб-сервер Apache или Nginx и базу данных MySQL или postgresql. В Dockerfile должны использоваться инструкции: FROM, MAINTAINER, RUN, CMD, WORKDIR, ENV, ADD, COPY, VOLUME, USER, EXPOSE. Dockerfile должен содержать комментарии с пояснениями того, что делается. Собранный образ должен иметь имя вида <фамилия>_<инициалы>image<текущая дата>. Рядом с dockerfile должен быть скрин, на котором будут видны все слои вашего image и их размер на диске, команда, которой вы это выведете.<br><br><br><br>
+2. Dockerfile для создания образа, который будет поддерживать веб-сервер Apache или Nginx и базу данных MySQL . В Dockerfile дополнительные возможности использования: FROM, MAINTAINER, RUN, CMD, WORKDIR, ENV, add, Copy, VOLUME, USER, EXPOSE.<br><br><br><br>
 
 
 
-3. Напишите docker compose конфиг, для разворачивания двух контейнеров в одной сети (10.10.10.0/28) типа bridge: 1 - Nginx или Apache, ему должны передаваться конфигурационные файлы через volume, порт 80 из контейнера должен быть доступен на хостовой машине по порту 8080 2 - mysql или postgres, каталог для хранения данных должен монтироваться как docker volume, docker volume должен быть описан в том же конфигурационном файле docker compose. Сервис с БД должен быть доступен из контейнера с веб-сервером по именам new_db, dev_db.
+3. docker to compose a config for deploying two containers on the same network (10.10.10.0/28) of the bridge type: 1 - Nginx or Apache server, then volume configuration files should be transmitted to it, port 80 from the container should be available on the host machine via port 8080 2 - MySQL , and the data storage directory should be mounted as volume settings, volume settings should be described in the same docker-compose configuration file. The break with the database should be unavailable due to the contact server with the web server named new_db, dev_db.
